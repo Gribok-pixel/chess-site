@@ -34,15 +34,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #313131;
 }
 
 .switches-prev {
-    background-color: #D6D6D6;
+    opacity: 20%;
     padding-right: 2px;
     transition: all .3s;
 }
 .switches-next {
-    background-color: #313131;
     padding-left: 2px;
     transition: all .3s;
 }
