@@ -1,0 +1,156 @@
+.header {
+    background-image: url('../img/header-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+
+    position: relative;
+}
+
+.logo {
+    padding-top: 26px;
+}
+
+.header-content {
+    padding-top: 62px;
+    max-width: 542px;
+}
+
+.header-content__title {
+    font-family: "Merriweather";
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 66px;
+    text-transform: uppercase;
+}
+
+.header-content__title p:nth-child(2) {
+    text-align: center;
+}
+.header-content__title p:nth-child(3) {
+    text-align: right;
+}
+
+.header-content__paragraph {
+    padding-top: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+}
+
+.header-content__btns {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content__btns a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 263px;
+    border-radius: 66px;
+    height: 72px;
+
+    font-size: 16px;
+    line-height: 20.8px;
+    font-weight: 500;
+    padding: 20px 49px;
+    text-align: center;
+}
+
+.btn-support {
+    background-color: #1f1f1f;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+.btn-support:hover {
+    background-color: #FBCE51;
+    color: #1f1f1f;
+}
+
+.btn-about {
+    border: 2px solid #1f1f1f;
+    color: #1f1f1f;
+    transition: all .3s ease-in-out;
+}
+.btn-about:hover {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.header-ticker {
+    position: absolute;
+    bottom: -60px;
+
+    font-family: "Merriweather";
+    font-size: 22px;
+    line-height: 24.2px;
+    font-weight: 400;
+    color: #fff;
+
+    width: 100%;
+    height: 60px;
+    background-color: #F54932;
+
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+@media screen and (max-width: 375px ) {
+    .header {
+        background-image: url('../img/header-bg-screen.png');
+        height: 812px;
+    }
+    .logo {
+        padding-top: 18px;
+    }
+    .header-content {
+        padding-top: 40px;
+        max-width: 335px;
+    }
+    .header-content__title {
+        font-family: "Merriweather";
+        font-size: 36px;
+        line-height: 39px;
+    }
+    .header-content__title p:nth-child(2) {
+        padding-left: 8px;
+    }
+    .header-content__paragraph {
+        text-align: start;
+    }
+    .header-content__btns {
+        padding-top: 32px;
+        flex-direction: column;
+        row-gap: 14px;
+    }
+    
+    .header-content__btns a {
+        width: 100%;
+        border-radius: 66px;
+        height: 47px;
+
+        padding: 0 0;
+    }
+    .btn-about {
+        border: none;
+        background-color: #fff;
+    }
+
+    .header-ticker {
+        bottom: 0;
+
+        font-size: 16px;
+        line-height: 17.6px;
+    
+        width: 100%;
+        height: 38px;
+    }
+}

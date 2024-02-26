@@ -1,0 +1,278 @@
+.tourney {
+    margin-top: 60px;
+    padding-top: 80px;
+}
+
+.tourney__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 64px;
+}
+
+.tourney__head-title {
+    font-family: "Merriweather";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48.6px;
+    text-transform: uppercase;
+}
+.tourney__head-title div{
+    display: inline;
+}
+.tourney__head-title div p{
+    font-weight: 700;
+    color: #F54932;
+}
+
+.tourney__head-image img{
+    border-radius: 50%;
+}
+
+
+.tourney__main {
+    margin-top: 64px;
+    height: 527px;
+    width: 100%;
+
+    position: relative;
+}
+
+.tourney__main-image {
+    position: absolute;
+    left: -32px;
+    bottom: 32px;
+    height: 100%;
+}
+.tourney__main-image img{
+    max-width: 528px;
+}
+
+
+
+.tourney__main-info {
+    max-width: 704px;
+    float: right;
+}
+
+.tourney__main-title {
+    font-family: "Merriweather";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48.6px;
+    text-transform: uppercase;
+}
+.tourney__main-title span{
+    font-weight: 700;
+    color: #F54932;
+}
+
+
+
+.tourney__main-grid {
+    margin-top: 60px;
+}
+
+.tourney-grid__row {
+    display: flex;
+    justify-content: flex-start;
+
+    height: 56px;
+    border-bottom: 2px solid #D0D0D0;
+}
+.tourney-grid__row:first-child {
+    height: 40px;
+}
+.tourney-grid__row:first-child .tourney-grid__col-1, 
+.tourney-grid__row:first-child .tourney-grid__col-2 {
+    align-items: flex-start;
+}
+
+.tourney-grid__row:last-child {
+    height: 40px;
+    border-bottom: none;
+}
+.tourney-grid__row:last-child .tourney-grid__col-1,
+.tourney-grid__row:last-child .tourney-grid__col-2 {
+    align-items: flex-end;
+}
+
+.tourney-grid__col-1 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    opacity: 70%;
+
+    width: 306px;
+    border-right: 2px solid #D0D0D0;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+.tourney-grid__col-2 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+
+    width: 398px;
+    height: 100%;
+    padding-left: 16px;
+
+    display: flex;
+    align-items: center;
+}
+
+.old-price {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #F54932;
+}
+
+
+.tourney__main-link {
+    margin-top: 48px;
+    color: #3057A2;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+
+
+
+@media screen and (max-width: 375px ) {
+    .tourney {
+        margin-top: 0px;
+        padding-top: 48px;
+    }
+    .tourney__head {
+        position: relative;
+        display: block;
+        column-gap: 0;
+    }
+    .tourney__head-title {
+        font-family: "Merriweather";
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 37.8px;
+    }
+    .tourney__head-title div {
+        position: absolute;
+        top: 413px;
+        display: block;
+    }
+    .tourney__head-image {
+        margin: 24px 0;
+    }
+    .tourney__head-image img{
+        max-width: 335px;
+        border-radius: 50%;
+        
+    }
+
+
+
+    .tourney__main {
+        margin-top: 210px;
+        height: auto;
+    }
+    .tourney__main-image {
+        left: -20px;
+        bottom: 0;
+        /* height: 100%; */
+    }
+    .tourney__main-image img{
+        max-width: 100%;
+    }
+
+
+    .tourney__main-info {
+        max-width: 336px;
+        float: none;
+        padding-top: 400px;
+    }
+    .tourney__main-title {
+        font-family: "Merriweather";
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 37.8px;
+        text-transform: uppercase;
+    }
+
+
+
+    .tourney__main-grid {
+        margin-top: 44px;
+        display: flex;
+        flex-direction: column;
+    }
+    .tourney-grid__row {
+        display: block;
+        flex-direction: column;
+        justify-content: flex-start;
+    
+        height: auto;
+    }
+    .tourney-grid__row:first-child {
+        height: auto;
+    }
+    .tourney-grid__row:last-child {
+        height: auto;
+    }
+    .tourney-grid__col-1 {
+        width: 100%;
+        border-right: none;
+        height: auto;
+        padding: 16px 0 12px 0;
+    
+        display: block;
+    }
+    .tourney-grid__col-2 {
+        height: auto;
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 16px;
+    
+        display: block;
+    }
+ 
+    .tourney-grid__row:first-child .tourney-grid__col-1 {
+        padding-top: 0px;
+    }
+    .tourney-grid__row:last-child .tourney-grid__col-2 {
+        padding-bottom: 0px;
+    }
+
+    .order-1 {
+        order: 0;
+    }
+    .order-2 {
+        order: 1;
+    }
+    .order-3 {
+        order: 3;
+    }
+    .order-4 {
+        order: 2;
+        padding: 16px 0;
+    }
+    .order-5 {
+        order: 4;
+    }
+
+    .order-4 .tourney-grid__col-1{
+        display: inline;
+    }
+    .order-4 .tourney-grid__col-2{
+        display: inline;
+        padding-left: 12px;
+    }
+
+    
+    .tourney__main-link {
+        margin-top: 40px;
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+}
