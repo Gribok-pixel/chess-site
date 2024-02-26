@@ -19,12 +19,12 @@ function slideNext() {
         translate-=sliderStep
         participantsList.style.transition = `all 0.5s`
         participantsList.style.transform = `translateX(${translate}px)`
-        prevParticipantBtn.style.backgroundColor = '#313131'
+        prevParticipantBtn.style.opacity = '100%'
 
         numbering.children[0].textContent = Number(numbering.children[0].textContent) + 1
     } 
     if (Number(numbering.children[0].textContent) == participantsList.children.length) {
-        nextParticipantBtn.style.backgroundColor = '#D6D6D6'
+        nextParticipantBtn.style.opacity = '20%'
     }
 }
 function slidePrev() {
@@ -33,12 +33,12 @@ function slidePrev() {
         translate+=sliderStep
         participantsList.style.transition = `all 0.5s`
         participantsList.style.transform = `translateX(${translate}px)`
-        nextParticipantBtn.style.backgroundColor = '#313131'
+        nextParticipantBtn.style.opacity = '100%'
 
         numbering.children[0].textContent = Number(numbering.children[0].textContent) - 1
     } 
     if (Number(numbering.children[0].textContent) == visibleListSum) {
-        prevParticipantBtn.style.backgroundColor = '#D6D6D6'
+        prevParticipantBtn.style.opacity = '20%'
     }
 }
 
